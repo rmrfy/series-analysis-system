@@ -41,7 +41,7 @@ class ThemeClassifier():
         
         #  Run Model
         theme_output = self.theme_classifier(
-            script_batches[:2], # only classifying 2 episodes
+            script_batches[:2], # LIMIT (run on limited dataset)
             self.theme_list,
             multi_label=True
         )
@@ -66,7 +66,7 @@ class ThemeClassifier():
         
         # load dataset
         df = load_subtitles_dataset(dataset_path)
-        df = df.head(2) # only classifying 2 episodes, will have to remove this to classify on all episodes
+        df = df.head(2) # LIMIT (run on limited dataset)
 
         # run inference
         output_themes = df['script'].apply(self.get_themes_inference)
