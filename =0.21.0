@@ -1,0 +1,10 @@
+Name: accelerate
+Version: 0.21.0
+Summary: Accelerate
+Home-page: https://github.com/huggingface/accelerate
+Author: The HuggingFace team
+Author-email: sylvain@huggingface.co
+License: Apache
+Location: /home/ashish/development/series-analysis-system/.venv/lib/python3.10/site-packages
+Requires: numpy, packaging, psutil, pyyaml, torch
+Required-by: 
